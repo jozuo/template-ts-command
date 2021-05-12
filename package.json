@@ -1,0 +1,31 @@
+{
+  "name": "command",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist coverage",
+    "build": "tsc",
+    "lint": "npx eslint --max-warnings 0 src/**/*.ts",
+    "test": "jest --collectCoverage --collectCoverageFrom=src/**/*.ts --collectCoverageFrom=!src/bin/www.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12",
+    "@typescript-eslint/eslint-plugin": "2",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "6",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-standard-with-typescript": "^10.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "10",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-standard": "4",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  }
+}
